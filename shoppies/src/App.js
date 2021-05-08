@@ -33,7 +33,7 @@ function App() {
     
   },[nominatedMovies])
   useEffect(() => {
-    let API = 'http://www.omdbapi.com/?apikey=66521911&type=movie&s='+userSearchRequest;
+    let API = 'https://www.omdbapi.com/?apikey=66521911&type=movie&s='+userSearchRequest;
     fetch(API)
     .then((response) => response.json())
     .then((result) => 
